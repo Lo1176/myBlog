@@ -1,42 +1,90 @@
 <!DOCTYPE html>
-<html lang="en"><!-- utile pour les pages recommandées-->
-<head>
-    <meta charset="UTF-8"> <!-- pour l'affichage de certains caractères-->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- pour supporter des vieilles versions de navigateurs-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- pour gérer l'affichage notamment mobile-->
-    <link rel="stylesheet" href="style.css"> 
-    <title>Document</title><!-- utile pour le SEO-->
-</head>
-<body>
-    <div class="exemple-div-1">div 1</div>
-    <div class="exemple-div-2">div 2</div>
-    <a class="exemple-a-1">exemple1</a>
-    <a class="exemple-a-2">exemple2</a>
-    <span class="exemple-span">span</span>
-    <section class="exemple-section">section</section>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="application.css" />
+    <title>Maquette Claire</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header row">
+        <div id="home">
+          <a href="#">
+            <img
+              class="desktop"
+              src="assets/logo-desktop.png"
+              alt="computer-image"
+            />
+            <p>&ltmyBlog&gt</p>
+          </a>
+        </div>
+        <div class="pages">
+          <a href="">Accueil</a>
+          <a href="">Cours</a>
+          <a href="">Blog</a>
+          <a href="">Newsletter</a>
+        </div>
+      </div>
+      <div class="banner">
+        <div id="logo">
+          <img
+            class="desktop"
+            src="assets/logo-desktop.png"
+            alt="computer-image"
+          />
+          <p>&ltmyBlog&gt</p>
+        </div>
+        <div class="banner-text">
+          <h1 classe="slogan">La plateforme d'apprentissage du code.</h1>
+          <h2 class="hook">
+            Apprenez la programmation et le métier de dev grâce à nos cours et
+            nos ressources
+          </h2>
+        </div>
+        <button>
+          Découvrez nos cours<img
+            src="assets/briefcase-6.svg"
+            alt="briefcase"
+          />
+        </button>
+        <div class="bounce">
+          <img src="assets/arrow-down.svg" alt="arrow-down" />
+        </div>
+      </div>
+      <div class="learn">
+        <h1>Apprendre, découvrir, expérimenter</h1>
+        <div class="terminal">
+          <div class="header-terminal">
+            <p>Terminal</p>
+            <div class="cercle">
+                <img src="assets/circle-solid.svg" width="12px"alt="round" />
+                <img src="assets/circle-solid.svg" width="12px"alt="round" />
+                <img src="assets/circle-solid.svg" width="12px"alt="round" />
 
-    <div class="div-parente">
-        <div class="div-enfant">hello</div>
-        <div class="div-enfant">hello</div>
-        <div class="div-enfant">hello</div>
+            </div>
+         
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
+            accusamus quaerat. Laudantium necessitatibus distinctio in nihil non
+            enim, harum expedita veritatis tempore qui cupiditate ullam tenetur             soluta, animi alias rem. <br><br> 
+            Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt dolorem! <br>
+            Officiis iure rerum voluptates a cumque velit quibusdam sed amet
+            tempora. Sit laborum ab, eius fugit doloribus tenetur fugiat,
+            temporibus enim commodi iusto libero magni deleniti quod quam
+            consequuntur! Commodi minima excepturi repudiandae velit hic maxime doloremque. Quaerat provident commodi consectetur veniam similique ad earum omnis ipsum saepe, voluptas, hic voluptates pariatur est
+            explicabo fugiat, dolorum eligendi quam cupiditate excepturi
+            mollitia maiores labore suscipit quas? Nulla, placeat. Voluptatem
+            quaerat non architecto ab laudantium modi minima sunt esse
+            temporibus sint culpa, recusandae aliquam numquam totam ratione
+            voluptas quod exercitationem fuga.
+            <br>    
+          </p>
+          <div class="footer-terminal"></div>
+        </div>
+      </div>
     </div>
-
-    <div class="div-parente-flex">
-        <div class="div-enfant-flex">hello</div>
-        <div class="div-enfant-flex">hello</div>
-        <div class="div-enfant-flex">hello</div>
-    </div>
-    
-    <h2>Premier h2</h2>
-    <h2 class="titre-h2">Deuxième h2</h2>
-    <h2 id="id-h2-1" class="titre-h2">Troisième h2</h2>
-    <div>
-        <h2 class="titre-h2">Quatrième h2</h2>
-        <h2 class="titre-h2 red">Cinquième h2</h2>
-    </div>
-    
-    
-
-    
-</body>
+  </body>
 </html>
