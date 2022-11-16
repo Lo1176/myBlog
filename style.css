@@ -32,17 +32,54 @@ a {
 }
 a:hover {
     color: var(--white);
-    /* padding: 24px !important; */
-    background-color: var(--green);
-
 }
+
 .screen-height {
     height: var(--screen-height);
+}
+/* btn */
+.btn-black {
+    color: var(--white);
+    background-color: var(--header-color);
+
+}
+.btn-black:hover {
+    color: var(--black);
+    background-color: var(--white);
+    box-shadow: 1px 1px 1px 1px var(--black);
+}
+
+.btn-white {
+    color: var(--black);
+    background-color: var(--white);
+}
+.btn-white:hover {
+    color: var(--white);
+    background-color: var(--header-color);
+}
+
+button {
+    transition: 0.3s ease-in-out;
+    border-radius: 50px;
+    font-size: 27px;
+    font-weight: bold;
+    padding: 24px 72px 24px 72px;
+    margin: 24px 0 24px 0;
+    border-width: 0;
+    cursor: pointer;
+}
+
+button > img {
+        margin-left: 20px;
 }
 
 /* --------header-------- */
 .header {
     background-color: var(--header-color);
+}
+.header a:hover {
+    background-color: var(--green);
+
 }
 
 #home-logo {
@@ -115,22 +152,6 @@ svg {
     font-size: 40px;
     font-weight: bold;
     margin: 0;
-}
-
-button {
-    /* width: 480px; */
-    border-radius: 50px;
-    background-color: var(--white);
-    color: var(--black);
-    font-size: 27px;
-    font-weight: bold;
-    padding: 24px 72px 24px 72px;
-    margin: 24px 0 24px 0;
-    border-width: 0;
-    cursor: pointer;
-}
-button > img {
-        margin-left: 20px;
 }
 
 /* bounce arrow down */
@@ -206,20 +227,18 @@ button > img {
     flex-direction: column;
     align-items: center;
 }
-#cours h1, #ressources h1 {
+#cours h1, #ressources h1, #blog h1 {
     font-size: 72px;
     font-weight: bolder;
+    margin-bottom: 12px;
 }
 #cours h2, #ressources h2 {
     font-size: 42px;
     font-weight: 500;
+    margin-top: 0;
 }
 #cours a {
     background: none;
-}
-#cours .see-courses {
-    color: var(--white);
-    background-color: var(--header-color);
 }
 
 .courses {
@@ -280,6 +299,18 @@ button > img {
 }
 
 /* --------ressources-------- */
+.ressources-cards {
+    display: flex;
+}
+.card-ressource {
+    margin: 4px 24px;
+}
+.card-ressource h4, p {
+    margin-top: 0;
+}
+.card-ressource p {
+    font-style: italic;
+}
 .card-ressource img {
     width: 108px;
     filter: brightness(0) invert(1);
@@ -287,6 +318,39 @@ button > img {
 
 /* --------ressources END-------- */
 
+/* --------blog-------- */
+#blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#blog .img-blog {
+    width: 120px;
+    filter: brightness(0) invert(1);
+    margin-bottom: 80px;
+
+}
+
+.carrousel {
+    display: flex;
+}
+.carrousel .carrousel-images-blog img {
+    width: 348px;
+    margin: 32px;
+}
+
+.arrow-left {
+    transform: rotate(90deg);
+    width: 72px;
+
+    
+}
+.arrow-right {
+    transform: rotate(-90deg);
+    width: 72px;
+
+}
+/* --------blog END-------- */
 
 /* bubble message */
 .message {
