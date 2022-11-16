@@ -21,6 +21,10 @@
     --screen-height: 100%;
     /* --screen-height: 600px; */
 }
+
+html {
+  scroll-behavior: smooth;
+}
 /* all links a */
 a {
     color: var(--grey);
@@ -129,6 +133,18 @@ button > img {
         margin-left: 20px;
 }
 
+/* bounce arrow down */
+.bounce {
+    transform: translateY(0);
+    animation: bouncer 1s ease-out infinite; 
+}
+
+/* call your 'function' name: "bouncer" */
+@keyframes bouncer {
+    0% {transform: translateY(-15%);}
+    100% {transform: translateY(10%)}    
+}
+
 .bounce img{
     width: 72px;
 }
@@ -214,6 +230,9 @@ button > img {
     width: 70%;
 }
 /* card-cours */
+.card-and-label {
+
+}
 .card-cours {
     display: flex;
     align-items: center;
@@ -221,8 +240,8 @@ button > img {
     height: 100px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 8px;
-    margin: 24px;
-    padding: 8px;
+    margin: 24px 24px 0 24px;
+    padding: 0 8px;
 }
 
 .card-cours img {
@@ -263,6 +282,7 @@ button > img {
 /* --------ressources-------- */
 .card-ressource img {
     width: 108px;
+    filter: brightness(0) invert(1);
 }
 
 /* --------ressources END-------- */
