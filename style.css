@@ -59,7 +59,7 @@ a:hover {
 }
 
 button {
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
     border-radius: 50px;
     font-size: 27px;
     font-weight: bold;
@@ -85,6 +85,9 @@ button > img {
 #home-logo {
     margin: 16px 16px 2px 16px;
     text-align: center;
+}
+#home-logo a:hover {
+    background: none;
 }
 #home-logo .desktop {
     width: 60px;
@@ -209,6 +212,9 @@ svg {
     border-top-left-radius: var(--border-radius-terminal);
     border-top-right-radius: var(--border-radius-terminal);
 }
+.header-terminal p {
+    margin: 16px 0;
+}
 .cercle img {
     padding: 0 4px;
 }
@@ -259,8 +265,8 @@ svg {
     height: 100px;
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 8px;
-    margin: 24px 24px 0 24px;
-    padding: 0 8px;
+    margin: 0 16px;
+    padding: 12px 8px;
 }
 
 .card-cours img {
@@ -280,13 +286,13 @@ svg {
     margin-top: 8px;
 }
 .card-cours .card-cours-infos {
-    /* padding-right: 16px; */
+    padding-right: 16px;
     opacity: .7;
 }
 
 .red-btn {
     position: relative;
-    bottom: 76%;
+    bottom: 86%;
     left: 7%;
     color: var(--white);
     background-color: var(--red);
@@ -301,15 +307,22 @@ svg {
 /* --------ressources-------- */
 .ressources-cards {
     display: flex;
+    margin-bottom: 40px;
 }
 .card-ressource {
     margin: 4px 24px;
+    text-align: center;
 }
-.card-ressource h4, p {
-    margin-top: 0;
+.card-ressource h4 {
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
 }
 .card-ressource p {
+    font-size: 14px;
     font-style: italic;
+    font-weight: 100;
+    margin: 0;
 }
 .card-ressource img {
     width: 108px;
@@ -352,6 +365,35 @@ svg {
 }
 /* --------blog END-------- */
 
+/* --------footer-------- */
+.footer {
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 32px 0;
+
+}
+.footer2, .footer3 {
+    display: flex;
+    flex-direction: column;
+    
+}
+.footer2 a, .footer3 a {
+    margin-bottom: 8px;
+
+}
+.social-media {
+    display: flex;
+    align-items: center;
+
+}
+.social-media span a i {
+    font-size: 56px;
+    margin: 0 20px;
+
+}
+
+/* --------footer END-------- */
 /* bubble message */
 .message {
     position: fixed;
