@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="application.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Maquette Claire</title>
   </head>
   <body>
     <div class="main-container">
       <div class="header row">
-        <div id="home">
+        <div id="home-logo">
           <a href="#">
             <img
               class="desktop"
@@ -21,13 +21,13 @@
           </a>
         </div>
         <div class="pages">
-          <a href="">Accueil</a>
-          <a href="">Cours</a>
-          <a href="">Blog</a>
+          <a href="#">Accueil</a>
+          <a href="#cours">Cours</a>
+          <a href="#blog">Blog</a>
           <a href="">Newsletter</a>
         </div>
       </div>
-      <div class="banner">
+      <div id="banner" class="screen-height">
         <div id="logo">
           <img
             class="desktop"
@@ -43,17 +43,23 @@
             nos ressources
           </h2>
         </div>
-        <button>
-          Découvrez nos cours<img
-            src="assets/briefcase-6.svg"
-            alt="briefcase"
-          />
-        </button>
+        <a href="#cours">
+          <button>
+            Découvrez nos cours<img
+              src="assets/briefcase-6.svg"
+              alt="briefcase"
+            />
+          </button>
+
+        </a>
         <div class="bounce">
-          <img src="assets/arrow-down.svg" alt="arrow-down" />
+          <a href="#learn">
+
+            <img src="assets/arrow-down.svg" alt="arrow-down" />
+          </a>
         </div>
       </div>
-      <div class="learn">
+      <div id="learn" class="screen-height">
         <h1>Apprendre, découvrir, expérimenter</h1>
         <div class="terminal">
           <div class="header-terminal">
@@ -69,21 +75,69 @@
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque,
             accusamus quaerat. Laudantium necessitatibus distinctio in nihil non
-            enim, harum expedita veritatis tempore qui cupiditate ullam tenetur             soluta, animi alias rem. <br><br> 
+            enim, harum expedita veritatis tempore qui cupiditate ullam tenetur soluta, animi alias rem. <br><br> 
             Quo neque error repudiandae fuga? Ipsa laudantium molestias eos sapiente officiis modi at sunt excepturi expedita sint? Sed quibusdam recusandae alias error harum maxime adipisci amet laborum. Perspiciatis minima nesciunt dolorem! <br>
             Officiis iure rerum voluptates a cumque velit quibusdam sed amet
             tempora. Sit laborum ab, eius fugit doloribus tenetur fugiat,
             temporibus enim commodi iusto libero magni deleniti quod quam
-            consequuntur! Commodi minima excepturi repudiandae velit hic maxime doloremque. Quaerat provident commodi consectetur veniam similique ad earum omnis ipsum saepe, voluptas, hic voluptates pariatur est
-            explicabo fugiat, dolorum eligendi quam cupiditate excepturi
-            mollitia maiores labore suscipit quas? Nulla, placeat. Voluptatem
-            quaerat non architecto ab laudantium modi minima sunt esse
-            temporibus sint culpa, recusandae aliquam numquam totam ratione
-            voluptas quod exercitationem fuga.
+            consequuntur! Commodi minima excepturi repudiandae velit hic maxime doloremque. Quaerat provident commodi consectetur veniam similique ad earum omnis ipsum saepe, voluptas, hic voluptates pariatur est explicabo fugiat, dolorum eligendi quam cupiditate excepturi mollitia maiores labore suscipit quas?
             <br>    
           </p>
           <div class="footer-terminal"></div>
         </div>
+      </div>
+      <div id="cours" class="screen-height">
+        <h1>Les cours</h1>
+        <h2>Un abonnement unique</h2>
+        <div class="courses">
+          <div class="">
+
+            <div class="card-cours">
+              <img src="assets/sql.png" alt="SQL" />
+              <div class="card-cours-infos">
+                <h4>Maîtrisez SQL et MySQL</h4>
+                <p>les bases de données relationnelles sont <strong>incontournables</strong> pour les devs web !</p>
+              </div>
+            </div>
+            <p class="red-btn">Cours</p>
+          </div>
+          <div class="">
+
+            <div class="card-cours">
+              <img src="assets/job.png" alt="job" />
+              <div class="card-cours-infos">
+                <h4>Décrocher votre premier job de dev</h4>
+                <p>Si vous décrocher un <strong>emploi</strong> mais que vous n'arrivez pas à vous vrendre.</p>
+              </div>
+            </div>
+            <p class="red-btn">Cours</p>
+          </div>
+          <div class="">
+
+            <div class="card-cours">
+              <img src="assets/git.png" alt="git" />
+              <div class="card-cours-infos">
+                <h4>Apprenez Git et Github</h4>
+                <p>L'outil indispensable pour gérer <strong>son code</strong>.</p>
+              </div>
+            </div>
+            <p class="red-btn">Cours</p>
+          </div>
+          <div class="">
+
+            <div class="card-cours">
+              <img src="assets/freelance.png" alt="freelance.png" />
+              <div class="card-cours-infos">
+                <h4>Maîtrisez SQL et MySQL</h4>
+                <p>les bases de données relationnelles sont <strong>incontournables</strong> pour les devs web !</p>
+              </div>
+            </div>
+            <p class="red-btn">Cours</p>
+          </div>
+        </div>
+        <a class="btn btn-ghost" href="#">Voir tous les cours</a>
+
+        <button class="see-courses">Voir tous les cours</button>
       </div>
     </div>
   </body>

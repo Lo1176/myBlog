@@ -6,6 +6,7 @@
     --green: #7ED957;
     --white: #FFFFFF;
     --grey: #A6A6A6;
+    --red: #E84B3B;
     --header-color: #1A1A1A;
     color: var(--white);
     background-color: var(--black);
@@ -15,6 +16,10 @@
 
     /* border radius */
     --border-radius-terminal: 16px;
+
+    /* screen height */
+    --screen-height: 100%;
+    /* --screen-height: 600px; */
 }
 /* all links a */
 a {
@@ -27,20 +32,23 @@ a:hover {
     background-color: var(--green);
 
 }
+.screen-height {
+    height: var(--screen-height);
+}
 
-/* header */
+/* --------header-------- */
 .header {
     background-color: var(--header-color);
 }
 
-#home {
+#home-logo {
     margin: 16px 16px 2px 16px;
     text-align: center;
 }
-#home .desktop {
+#home-logo .desktop {
     width: 60px;
 }
-#home p {
+#home-logo p {
     font-size: 24px;
     font-weight: bold;
     color: var(--white);
@@ -70,8 +78,8 @@ svg {
     flex-direction: row;
 }
 
-/* banner */
-.banner {
+/* --------banner-------- */
+#banner {
     text-align: center;
     width: 70vw;
     margin: 16px auto 2px auto;
@@ -79,20 +87,20 @@ svg {
     /* background-color: red; */
 
 }
-.banner h1 {
+#banner h1 {
     margin-top: 40px;
     margin-bottom: 24px;
     font-size: 34px;
     /* background-color: red; */
 }
-.banner p {
+#banner p {
     font-size: 24px;
 }
-.banner .hook {
+#banner .hook {
     width: 36vw;
     margin: auto;
 }
-.banner-text {
+#banner-text {
     margin-bottom: 24px;
 }
 #logo .desktop {
@@ -106,21 +114,32 @@ svg {
 }
 
 button {
-    width: 480px;
-    border-radius: 24px;
+    /* width: 480px; */
+    border-radius: 50px;
     background-color: var(--white);
     color: var(--black);
     font-size: 27px;
     font-weight: bold;
-    padding: 24px 0 24px 0;
+    padding: 24px 72px 24px 72px;
     margin: 24px 0 24px 0;
+    border-width: 0;
+    cursor: pointer;
 }
 button > img {
         margin-left: 20px;
 }
 
-/* learn */
-.learn  {
+.bounce img{
+    width: 72px;
+}
+.bounce a:hover {
+    -webkit-animation-name: bounce; 
+    animation-name: bounce;
+    background: none;
+}
+
+/* --------learn-------- */
+#learn  {
     background-image: url("assets/background-blue.png");
     background-size: 28px;
     background-repeat: repeat;
@@ -128,13 +147,14 @@ button > img {
     flex-direction: column;
     align-items: center;
 }
-.learn h1 {
+#learn h1 {
     font-size: 58px;
+    text-align: center;
 }
 .terminal {
     width: 50vw;
     background-color: var(--black);
-    margin: 0 auto 0 auto;
+    margin: 0 auto 16vh auto;
     border-radius : var(--border-radius-terminal);
     
 }
@@ -159,4 +179,79 @@ button > img {
     height: 48px;
     border-bottom-left-radius: var(--border-radius-terminal);
     border-bottom-right-radius: var(--border-radius-terminal);
+}
+
+/* --------cours-------- */
+#cours {
+    background-color: var(--white);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cours h1 {
+    font-size: 72px;
+    font-weight: bolder;
+}
+#cours h2 {
+    font-size: 42px;
+    font-weight: 500;
+}
+#cours .see-courses {
+    color: var(--white);
+    background-color: var(--header-color);
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin: 0 198px; */
+    width: 70%;
+}
+/* card-cours */
+.card-cours {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 100px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin: 24px;
+    padding: 8px;
+}
+
+.card-cours img {
+    height: auto;
+    width: 80px;
+    object-fit: cover;
+    margin: 12px;
+}
+.card-cours h4 {
+    font-size: 16px;
+    /* font-weight: bold; */
+    margin: 0;
+}
+.card-cours p {
+    font-size: 12px;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+.card-cours .card-cours-infos {
+    /* padding-right: 16px; */
+    opacity: .7;
+}
+
+.red-btn {
+    position: relative;
+    bottom: 76%;
+    left: 7%;
+    color: var(--white);
+    background-color: var(--red);
+    width: 48px;
+    text-align: center;
+    padding: 2px 4px;
+    border-radius: 16px;
+    font-size: 12px;
+
 }
