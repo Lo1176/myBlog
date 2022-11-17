@@ -58,7 +58,7 @@ a:hover {
     background-color: var(--header-color);
 }
 
-button {
+button, .btn-submit {
     transition: 0.2s ease-in-out;
     border-radius: 50px;
     font-size: 27px;
@@ -366,6 +366,22 @@ svg {
 /* --------blog END-------- */
 
 /* --------footer-------- */
+#footer-logo {
+    margin: 16px 16px 2px 16px;
+    text-align: center;
+}
+/* #footer-logo a:hover {
+    background: none;
+} */
+#footer-logo .desktop {
+    width: 168px;
+}
+#footer-logo p {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--white);
+    margin: 0;
+}
 .footer {
     background-color: var(--header-color);
     display: flex;
@@ -392,9 +408,24 @@ svg {
     margin: 0 20px;
 
 }
+.email-address {
+    font-weight: 200;
+    font-size: 16px;
+    border-radius: 16px;
+    padding: 12px;
 
+
+}
+.btn-submit {
+    font-weight: 200;
+    font-size: 24px;
+    border-radius: 16px;
+    background-color: #AC98EF;
+    padding: 12px;
+}
 /* --------footer END-------- */
-/* bubble message */
+
+/* --------bubble message------- */
 .message {
     position: fixed;
     bottom: 10%;
@@ -415,3 +446,4 @@ svg {
 .message img {
     transform: rotate(-30deg);
 }
+/* --------bubble message END------- */

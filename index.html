@@ -242,7 +242,7 @@
       <!-- footer -->
       <div class="footer">
         <div class="footer1">
-          <div id="home-logo">
+          <div id="footer-logo">
             <a href="#">
               <img
                 class="desktop"
@@ -277,7 +277,12 @@
             <span><a href=""><i class="fa fa-twitch" aria-hidden="true"></i></a></span>
           </div>
           <div class="connect">
-            <p>S'abonner à la newsletter</p>
+            <form action="get">           
+              <label for="email"><p>S'abonner à la newsletter</p></label>
+              <input class="email-address" type="email" name="email" id="email" pattern=".+@globex\.com" placeholder="jane.doe@matrice.com" required>
+              <input class="btn-submit" type="submit" value="S'inscrire" />
+
+            </form>
           </div>
         </div>
       </div>
