@@ -408,11 +408,19 @@ svg {
     margin: 0 20px;
 
 }
+
+.email-form {
+    display: flex;
+    align-items: center;
+    height: 48px;
+}
 .email-address {
     font-weight: 200;
     font-size: 16px;
     border-radius: 16px;
     padding: 12px;
+    border-width: 0;
+    margin-right: 12px;
 
 
 }
@@ -421,7 +429,7 @@ svg {
     font-size: 24px;
     border-radius: 16px;
     background-color: #AC98EF;
-    padding: 12px;
+    padding: 8px 12px;
 }
 /* --------footer END-------- */
 
