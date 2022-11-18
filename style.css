@@ -470,6 +470,8 @@ svg {
     align-content: space-between;
     text-align: center;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
 }
 /* presentation-card */
 .presentation-card {
@@ -483,6 +485,10 @@ svg {
     border-radius: 8px;
     margin: 16px;
     /* padding: 12px 8px; */
+}
+/* toggle presentation card */
+.border-card {
+    border: #7ED957 solid 20px;
 }
 
 /* btn-pay */
