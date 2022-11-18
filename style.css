@@ -37,7 +37,8 @@ a:hover {
 .screen-height {
     height: var(--screen-height);
 }
-/* btn */
+/* ---btn--- */
+/* btn-black */
 .btn-black {
     color: var(--white);
     background-color: var(--header-color);
@@ -48,7 +49,7 @@ a:hover {
     background-color: var(--white);
     box-shadow: 1px 1px 1px 1px var(--black);
 }
-
+/* btn-white */
 .btn-white {
     color: var(--black);
     background-color: var(--white);
@@ -58,6 +59,8 @@ a:hover {
     background-color: var(--header-color);
 }
 
+
+/* btn-submit */
 button, .btn-submit {
     transition: 0.2s ease-in-out;
     border-radius: 50px;
@@ -72,14 +75,14 @@ button, .btn-submit {
 button > img {
         margin-left: 20px;
 }
-
+/* ############## INDEX.html ################# */
 /* --------header-------- */
 .header {
     background-color: var(--header-color);
 }
 .header a:hover {
     background-color: var(--green);
-
+    
 }
 
 #home-logo {
@@ -129,7 +132,7 @@ svg {
     margin: 16px auto 2px auto;
     padding: 40px;
     /* background-color: red; */
-
+    
 }
 #banner h1 {
     margin-top: 40px;
@@ -179,7 +182,7 @@ svg {
 }
 
 /* --------learn-------- */
-#learn,#ressources  {
+#learn,#ressources, #page-cours-part3  {
     background-image: url("assets/background-blue.png");
     background-size: 28px;
     background-repeat: repeat;
@@ -201,7 +204,7 @@ svg {
 }
 .terminal p {
     padding: 0 12px;
-
+    
 }
 .header-terminal {
     display: flex;
@@ -226,14 +229,14 @@ svg {
 }
 
 /* --------cours-------- */
-#cours {
+#cours, #page-cours-part2 {
     background-color: var(--white);
     color: var(--black);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#cours h1, #ressources h1, #blog h1 {
+#cours h1, #ressources h1, #blog h1, #page-cours-part1 h1 {
     font-size: 72px;
     font-weight: bolder;
     margin-bottom: 12px;
@@ -256,8 +259,9 @@ svg {
 }
 /* card-cours */
 .card-and-label {
-
+    
 }
+
 .card-cours {
     display: flex;
     align-items: center;
@@ -301,7 +305,7 @@ svg {
     padding: 2px 4px;
     border-radius: 16px;
     font-size: 12px;
-
+    
 }
 
 /* --------ressources-------- */
@@ -341,7 +345,7 @@ svg {
     width: 120px;
     filter: brightness(0) invert(1);
     margin-bottom: 80px;
-
+    
 }
 
 .carrousel {
@@ -355,13 +359,13 @@ svg {
 .arrow-left {
     transform: rotate(90deg);
     width: 72px;
-
+    
     
 }
 .arrow-right {
     transform: rotate(-90deg);
     width: 72px;
-
+    
 }
 /* --------blog END-------- */
 
@@ -387,7 +391,7 @@ svg {
     display: flex;
     justify-content: space-around;
     padding: 32px 0;
-
+    
 }
 .footer2, .footer3 {
     display: flex;
@@ -396,17 +400,18 @@ svg {
 }
 .footer2 a, .footer3 a {
     margin-bottom: 8px;
-
+    
 }
 .social-media {
     display: flex;
     align-items: center;
-
+    margin-bottom: 24px;
+    
 }
 .social-media span a i {
     font-size: 56px;
     margin: 0 20px;
-
+    
 }
 
 .email-form {
@@ -416,13 +421,11 @@ svg {
 }
 .email-address {
     font-weight: 200;
-    font-size: 16px;
+    font-size: 12px;
     border-radius: 16px;
     padding: 12px;
     border-width: 0;
     margin-right: 12px;
-
-
 }
 .btn-submit {
     font-weight: 200;
@@ -432,6 +435,80 @@ svg {
     padding: 8px 12px;
 }
 /* --------footer END-------- */
+/* ############## INDEX.html END ################# */
+
+/* ############## COURS.html ################# */
+#cours-page {
+    color: var(--black);
+}
+.left, .right {
+    width: 50%;
+    height: 80vh;
+    margin: 24px 80px;
+}
+.left {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+}
+#page-cours-part1 {
+    background-image: url("assets/background-green.jpeg");
+    display: flex;
+    align-items: center;
+}
+#page-cours-part1 .right {
+    background: url("assets/checklist.png") no-repeat; 
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    /* height: 80vw; */
+}
+
+.cours-presentation {
+    display: flex;
+    align-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+}
+/* presentation-card */
+.presentation-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 23vw;
+    /* height: 100px; */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    margin: 16px;
+    /* padding: 12px 8px; */
+}
+
+/* btn-pay */
+.btn-pay {
+    border-radius: 4px;
+    color: var(--header-color);
+    background-color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 16px;
+}
+
+.presentation-card img {
+    /* background: #7ED957; */
+    width: 100%;
+    /* height: 70%; */
+}
+.text-presentation-card {
+    margin: 2px 16px;
+}
+
+.dnu {
+    width: 100%;
+}
+
+/* ############## COURS.html END ################# */
 
 /* --------bubble message------- */
 .message {
