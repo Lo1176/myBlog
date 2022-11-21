@@ -16,7 +16,7 @@
       <!-- header -->
       <div class="header row">
         <div id="home-logo">
-          <a href="#">
+          <a href="/index.html">
             <img
               class="desktop"
               src="assets/logo-desktop.png"
@@ -198,30 +198,31 @@
         <h1>Le Blog</h1>
         <img class="img-blog" src="assets/blog.png" alt="blog" />
         <div class="carrousel">
+          
           <img
-            class="arrow-left"
-            src="assets/arrow-down.svg"
-            alt="arrow-left"
+          class="slide-arrow-left"
+          src="assets/arrow-down.svg"
+          alt="arrow-left"
           />
-          <div class="carrousel-images-blog">
-            <img src="assets/img-carrousel-01.png" alt="" />
-            <img src="assets/img-carrousel-02.png" alt="" />
-            <img src="assets/img-carrousel-03.png" alt="" />
-          </div>
-          <img
-            class="arrow-right"
-            src="assets/arrow-down.svg"
-            alt="arrow-right"
+          <ul id="slider">
+            <li class="slide-img"><img class="active" loading="lazy" src="assets/01pipeline.png" alt="carrousel-01"></li>
+            <li class="slide-img"><img loading="lazy" src="assets/02rest.png" alt="carrousel-02"></li>
+          <li class="slide-img"><img loading="lazy" src="assets/03index.png" alt="carrousel-03"></li>
+        </ul>
+        <img
+          class="slide-arrow-right"
+          src="assets/arrow-down.svg"
+          alt="arrow-right"
           />
         </div>
-        <p>
-          Découvrir de nouveaux sujets, de nouvelles technologie, mettre en
-          place une veille et
-          <strong
+          <p>
+            Découvrir de nouveaux sujets, de nouvelles technologie, mettre en
+            place une veille et
+            <strong
             >s'améliorer de jour en jour ne devrait pas être si compliqué que
             ça, ni payant</strong
-          >.
-        </p>
+            >.
+          </p>
         <p>
           Voilà pourquoi notre blog est
           <strong>mis à jour chaque semaine</strong> !
@@ -286,5 +287,6 @@
         </div>
       </div>
     </div>
+    <script src="/application.js"></script>
   </body>
 </html>
