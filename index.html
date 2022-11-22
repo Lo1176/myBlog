@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
-    <script src="https://use.fontawesome.com/ed6d66e8f4.js"></script>
-
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"> -->
 
     <title>myBlog</title>
   </head>
@@ -25,12 +23,15 @@
             <p>&lt;myBlog&gt;</p>
           </a>
         </div>
-        <div class="pages">
-          <a href="#">Accueil</a>
-          <a href="/cours.html">Cours</a>
-          <a href="#blog">Blog</a>
-          <a href="">Newsletter</a>
-        </div>
+        <!-- nav -->
+        <nav class="pages">
+          <ul class="row">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="/cours.html">Cours</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="">Newsletter</a></li>
+          </ul>
+        </nav>
       </div>
       <!-- banner -->
       <!-- balise section ?? -->
@@ -44,7 +45,7 @@
           <p>&lt;myBlog&gt;</p>
         </div>
         <div class="banner-text">
-          <h1 classe="slogan">La plateforme d'apprentissage du code.</h1>
+          <h1 class="slogan">La plateforme d'apprentissage du code.</h1>
           <h2 class="hook">
             Apprenez la programmation et le métier de dev grâce à nos cours et
             nos ressources
@@ -198,31 +199,41 @@
         <h1>Le Blog</h1>
         <img class="img-blog" src="assets/blog.png" alt="blog" />
         <div class="carrousel">
-          
           <img
-          class="slide-arrow-left"
-          src="assets/arrow-down.svg"
-          alt="arrow-left"
+            class="slide-arrow-left"
+            src="assets/arrow-down.svg"
+            alt="arrow-left"
           />
           <ul id="slider">
-            <li class="slide-img"><img class="active" loading="lazy" src="assets/01pipeline.png" alt="carrousel-01"></li>
-            <li class="slide-img"><img loading="lazy" src="assets/02rest.png" alt="carrousel-02"></li>
-          <li class="slide-img"><img loading="lazy" src="assets/03index.png" alt="carrousel-03"></li>
-        </ul>
-        <img
-          class="slide-arrow-right"
-          src="assets/arrow-down.svg"
-          alt="arrow-right"
+            <li class="slide-img">
+              <img
+                class="active"
+                loading="lazy"
+                src="assets/01pipeline.png"
+                alt="carrousel-01"
+              />
+            </li>
+            <li class="slide-img">
+              <img loading="lazy" src="assets/02rest.png" alt="carrousel-02" />
+            </li>
+            <li class="slide-img">
+              <img loading="lazy" src="assets/03index.png" alt="carrousel-03" />
+            </li>
+          </ul>
+          <img
+            class="slide-arrow-right"
+            src="assets/arrow-down.svg"
+            alt="arrow-right"
           />
         </div>
-          <p>
-            Découvrir de nouveaux sujets, de nouvelles technologie, mettre en
-            place une veille et
-            <strong
+        <p>
+          Découvrir de nouveaux sujets, de nouvelles technologie, mettre en
+          place une veille et
+          <strong
             >s'améliorer de jour en jour ne devrait pas être si compliqué que
             ça, ni payant</strong
-            >.
-          </p>
+          >.
+        </p>
         <p>
           Voilà pourquoi notre blog est
           <strong>mis à jour chaque semaine</strong> !
@@ -235,8 +246,8 @@
       <!-- blog END -->
 
       <!-- bubble messager -->
-      <div class="message">
-        <div id="circle">
+      <div id="message">
+        <div class="circle">
           <img src="assets/message.png" />
         </div>
       </div>
@@ -269,24 +280,42 @@
         </div>
         <div class="footer4">
           <div class="social-media">
-            <span><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></span>
-            <span><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></span>
-            <span><a href=""><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></span>
-            <span><a href=""><i class="fa fa-twitch" aria-hidden="true"></i></a></span>
+            <span
+              ><a href=""><i class="fa fa-youtube" aria-hidden="true"></i></a
+            ></span>
+            <span
+              ><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a
+            ></span>
+            <span
+              ><a href=""
+                ><i class="fa fa-linkedin-square" aria-hidden="true"></i></a
+            ></span>
+            <span
+              ><a href=""><i class="fa fa-twitch" aria-hidden="true"></i></a
+            ></span>
           </div>
           <div class="connect">
-            <form action="get">           
+            <form action="get">
               <label for="email">S'abonner à la newsletter</label>
               <div class="email-form">
-                <input class="email-address" type="email" name="email" id="email" pattern=".+@globex\.com" placeholder="jane.doe@matrice.com" required>
-                <input class="btn-submit" type="submit" value="S'inscrire" />           
+                <input
+                  class="email-address"
+                  type="email"
+                  name="email"
+                  id="email"
+                  pattern=".+@globex\.com"
+                  placeholder="jane.doe@matrice.com"
+                  required
+                />
+                <input class="btn-submit" type="submit" value="S'inscrire" />
               </div>
-
             </form>
           </div>
         </div>
       </div>
     </div>
+    <script src="https://use.fontawesome.com/ed6d66e8f4.js"></script>
+
     <script src="/application.js"></script>
   </body>
 </html>

@@ -8,49 +8,40 @@ function functionSelected(event) {
     // toggle
     this.classList.toggle("border-card");
     let count = document.getElementById("counter");
-    // let nbOfSelectedElement;
     if (arrayCardSelected.length != 0) {
       counterCourses[0].classList.add("active");
       count.innerHTML = `Nombre de cours sélectionnés : ${arrayCardSelected.length}`;
       // console.log(arrayCardSelected.length)
-    } else {
-      counterCourses[0].classList.remove("active");
-    }
-    const emptyTrash = document.addEventListener("click", function() {
-      // clear all "border-count"
-    })
+    } 
+
+
+    // addEventListener trash-card-selected
+    // SORTIR C+ETTE 2EME FONCTION ET L APPELER CI DESSOUS
+    const trashSelected = document.getElementById("trash-card-selected")
+
+      trashSelected.addEventListener("click", function () {
+        // clear all "border-count"
+        Array.from(cardPresentation).forEach((card) => {
+          card.classList.remove("border-card");
+
+        })
+        counterCourses[0].classList.remove("active");
+
+      });
+  
     // event.preventDefault();
 }
+
+
+// trashAllSelected();
 // Array.from to transform HTMLCollection to array
 Array.from(cardPresentation).forEach((card) => {
   card.addEventListener("click", functionSelected);
 });
 
+
+
 /** slider images */
-// slider en array dans JS (idée à creuser ...)
-// var slide = new Array(
-//   "assets/img-carrousel-01.png",
-//   "assets/img-carrousel-02.png",
-//   "assets/img-carrousel-03.png"
-// );
-// var number = 0;
-
-// function ChangeSlide(direction) {
-//   number = number + direction;
-//   if (number < 0) number = slide.length - 1;
-//   if (number > slide.length - 1) number = 0;
-//   document.getElementById("slide").src = slide[number];
-// }
-
-//jQuery
-  // document.getElementById("slider").slick({
-  //   speed: 1000,
-  //   dots: true,
-  //   prevArrow: '<button class="slide-img prev-arrow"></button>',
-  //   nextArrow: '<button class="slide-img next-arrow"></button>'
-  // });
-
-
 /** https://codepen.io/Ziratsu/pen/abdoNgq */
 const items = document.querySelectorAll('#slider>li>img');
 const nbSlide = items.length;
